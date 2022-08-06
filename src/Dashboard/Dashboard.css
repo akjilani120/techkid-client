@@ -1,0 +1,45 @@
+.dashboard-header{
+    display: flex;
+    background-color: whitesmoke;
+    height: 100vh;
+    
+}
+.data-show-side{
+    width: 80%;
+}
+.dashboard-title{
+   background-color: rgb(6, 6, 88);
+   color: white;
+   padding: 15px;
+   text-transform: uppercase;
+}
+.nav-side{
+    width: 20%;
+    background-color: white;
+}
+.nav-side ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-side ul li{
+    margin: 20px 15px;
+    padding: 10px;
+    
+}
+.nav-side ul li:hover{
+    background-color: rgb(248, 9, 89);
+    color: white;
+    border-radius: 15px;
+}
+.nav-link-item{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+}
+.nav-side ul li:hover .nav-link-item{
+    color: white;
+    transform: translateX(10px);
+}
