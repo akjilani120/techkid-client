@@ -17,7 +17,8 @@ const TeacherRegistation = () => {
             email,
             age,
             deparment,
-            password
+            password,
+            role: "Teacher"
         }
         axios.post("http://localhost:5000/teacher", teacherdata)
         .then(res  => {
@@ -32,7 +33,7 @@ const TeacherRegistation = () => {
 
     return (
         <div className='d-flex justify-content-center'>
-            <div className='teacher-reg-body'> 
+            <div className='teacher-reg-body my-4'> 
                <h1 className='text-center text-primary'>Teacher Registation </h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <div class="mb-3">
