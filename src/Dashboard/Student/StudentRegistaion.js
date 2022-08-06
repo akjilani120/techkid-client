@@ -50,7 +50,7 @@ const StudentRegistaion = () => {
                     <input className='form-control' type="number"  {...register("id", { required: true })} />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Class / Year Name</label>
+                    <label for="exampleFormControlInput1" class="form-label">Class / Year / semester Name</label>
                     <input className='form-control' type="text"  {...register("class", { required: true })} />
                 </div>
                 <div class="mb-3">

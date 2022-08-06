@@ -6,7 +6,7 @@ const Dashboard = () => {
         <div className='dashboard-header'>
           <div className='nav-side' >
              <h3 className='px-4 dashboard-title'>Dashboard</h3>
-            <ul>
+            <ul className='nav-underlist'>
                 <li> <Link className="nav-link-item" to="/">Teacher Login</Link> </li>
                 <li> <Link className="nav-link-item" to="/teacherRegistation">Teacher Registation</Link> </li>
                 <li> <Link className="nav-link-item" to="/stuentRegistation">Student Registation</Link> </li>

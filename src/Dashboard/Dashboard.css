@@ -43,3 +43,23 @@
     color: white;
     transform: translateX(10px);
 }
+@media screen and (max-width:920px) {
+    .dashboard-header{
+        display: block;
+    }
+    .nav-side{
+        width: 100%;
+    }
+    .data-show-side{
+        width: 100%;
+    }
+    .nav-underlist{        
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-side ul li{
+        margin: 8px ;
+    }
+}
