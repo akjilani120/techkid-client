@@ -21,7 +21,7 @@ const StudentRegistaion = () => {
             password,
             className
         }
-        axios.post("http://localhost:5000/student", teacherdata)
+        axios.post("https://frozen-spire-94937.herokuapp.com/student", teacherdata)
         .then(res  => {
             if(res){
                 toast(" Student Registation Success")

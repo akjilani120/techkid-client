@@ -13,7 +13,7 @@ const StudentLogin = () => {
             password,
             id
         }
-        fetch("http://localhost:5000/student/login",{
+        fetch("https://frozen-spire-94937.herokuapp.com/student/login",{
             method:"POST",
             headers:{
                 "content-type" : "application/json"

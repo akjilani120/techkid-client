@@ -14,7 +14,7 @@ const TeacherLogin = () => {
             email,
             password
         }
-        fetch("http://localhost:5000/teacher/login",{
+        fetch("https://frozen-spire-94937.herokuapp.com/teacher/login",{
             method:"POST",
             headers:{
                 "content-type" : "application/json"

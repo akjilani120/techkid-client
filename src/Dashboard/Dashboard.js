@@ -5,7 +5,7 @@ import './Dashboard.css'
 const Dashboard = () => {    
     const [teachers , setTeachers] = useState("")
     useEffect(() =>{
-        fetch("http://localhost:5000/teacher")
+        fetch("https://frozen-spire-94937.herokuapp.com/teacher")
         .then(res => res.json())
         .then(data => setTeachers(data))
     } , [])

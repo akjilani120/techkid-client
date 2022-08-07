@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 const ShowStudents = () => {
+    const [loading , setLoading] = useState(false)
     const [students, setStudents] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:5000/totalStudent")
-            .then(res => setStudents(res.data))
+        setLoading(true)
+        axios.get("https://frozen-spire-94937.herokuapp.com/totalStudent")
+            .then(res => {setStudents(res.data)
+             setLoading(false)
+            })
     }, [])
+    if(loading){
+        return <h4>Loading .......</h4>
+    }
     return (
         <div className='bg-white py-5'>
             <h1 className=' text-primary text-center'>Show students</h1>
